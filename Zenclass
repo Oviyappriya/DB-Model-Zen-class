@@ -1,0 +1,41 @@
+CREATE TABLE Students
+(
+StudentID INT PRIMARY KEY,
+Student TEXT)
+
+INSERT INTO
+STUDENTS(STUDENT)
+VALUES(1),(2),(3);
+
+CREATE TABLE Zen_Class
+(
+StudentID FOREIGN KEY,
+Day INT,
+Topic TEXT,
+Task TEXT,
+Recorded_Link TEXT)
+
+INSERT INTO
+Zen_Class(Day,Topic,Task,Recorded_Link)
+VALUES
+(1,"Introduction to Browser & web","http://Zenclass"),
+(2,"Request & Response cycle","http://Zenclass"),
+(3,"Function","http://Zenclass"),
+(4,"React","http://Zenclass"),
+(5,"Redux","http://Zenclass")
+
+CREATE TABLE Tasks
+(studentID INT,
+No_Of_Days INT,
+Task_Complition TEXT);
+
+INSERT INTO Tasks
+(studentID INT,
+No_Of_Days INT,
+Task_Complition TEXT)
+VALUES
+(1,12,"Yes"),
+(2,13,"Yes"),
+(3,13,"Yes"),
+(4,13,"Yes"),
+(5,13,"Yes")
